@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Base -->
+
+<ThingDef ParentName="ResourceBase" Name="AugmentPartBase" Abstract="True">
+    <statBases>
+      <Mass>0.5</Mass>
+      <MarketValue>50</MarketValue>
+    </statBases>
+    <thingCategories>
+      <li>AugmentParts</li>
+    </thingCategories>
+    <tradeNeverStack>true</tradeNeverStack>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>50</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+<!-- Common Parts -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>SimplePart</defName>
+    <label>Simple Part</label>
+    <description>A simple part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>BasePart</defName>
+    <label>Base Part</label>
+    <description>A base part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Bladed melee -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>BladedPart</defName>
+    <label>Bladed Part</label>
+    <description>A bladed part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>SharpPart</defName>
+    <label>Sharp Part</label>
+    <description>A sharp part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Blunt melee -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>HeadPart</defName>
+    <label>Head Part</label>
+    <description>A head part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>SmoothPart</defName>
+    <label>Smooth Part</label>
+    <description>A smooth part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Ranged -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>TensilePart</defName>
+    <label>Tensile Part</label>
+    <description>A tensile part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>LongPart</defName>
+    <label>Long Part</label>
+    <description>A long part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Clothing -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>SewnPart</defName>
+    <label>Sewn Part</label>
+    <description>A sewn part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>FlexiblePart</defName>
+    <label>Flexible Part</label>
+    <description>A flexible part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Armour -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>PlatedPart</defName>
+    <label>Plated Part</label>
+    <description>A plated part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>PaddedPart</defName>
+    <label>Padded Part</label>
+    <description>A base part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Organic Items (Food etc) -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>OrganicPart</defName>
+    <label>Organic Part</label>
+    <description>A organic part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Medicinal -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>MedicinalPart</defName>
+    <label>Medicinal Part</label>
+    <description>A medicinal part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Uncommon Parts -->
+
+<!-- Bladed melee -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>TemperedPart</defName>
+    <label>Tempered Part</label>
+    <description>A tempered part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Blunt Melee -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>WeightedPart</defName>
+    <label>Weighted Part</label>
+    <description>A weighted part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Ranged -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>AccuratePart</defName>
+    <label>Accurate Part</label>
+    <description>A accurate part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Clothing -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>CraftedPart</defName>
+    <label>Crafted Part</label>
+    <description>A crafted part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Armour -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>ProtectivePart</defName>
+    <label>Protective Part</label>
+    <description>A protective part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Organic Items -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>RestorativePart</defName>
+    <label>Restorative Part</label>
+    <description>A restorative part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Medicinal -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>EnhancingPart</defName>
+    <label>Enhancing Part</label>
+    <description>An enhancing part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+
+<!-- Stuff-Based Parts -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>MetallicPart</defName>
+    <label>Metallic Part</label>
+    <description>A metallic part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>StonyPart</defName>
+    <label>Stony Part</label>
+    <description>A stony part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>WoodyPart</defName>
+    <label>Woody Part</label>
+    <description>A woody part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>FabricPart</defName>
+    <label>Fabric Part</label>
+    <description>A fabric part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>LeatheryPart</defName>
+    <label>Leathery Part</label>
+    <description>A leathery part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- 'Items' wide variety of items, going by their average high value -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>PreciousPart</defName>
+    <label>Precious Part</label>
+    <description>A precious part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Rare Parts -->
+
+<!-- Tech Level -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>SpacerPart</defName>
+    <label>Spacer Part</label>
+    <description>A spacer part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>UltraPart</defName>
+    <label>Ultra Part</label>
+    <description>An ultratech part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>ArchotechPart</defName>
+    <label>Archotech Part</label>
+    <description>An archotech part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Thing Quality level -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>WealthyPart</defName>
+    <label>Wealthy Part</label>
+    <description>A wealthy part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>ResilientPart</defName>
+    <label>Resilient Part</label>
+    <description>A resilient part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>FortunatePart</defName>
+    <label>Fortunate Part</label>
+    <description>A fortunate part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Material Specific -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>FungalPart</defName>
+    <label>Fungal Part</label>
+    <description>A fungal part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>SyntheticPart</defName>
+    <label>Synthetic Part</label>
+    <description>A synthetic part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>WeavePart</defName>
+    <label>Weave Part</label>
+    <description>A weave part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>PlastalloyPart</defName>
+    <label>Plastalloy Part</label>
+    <description>A plastalloy part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>NoblePart</defName>
+    <label>Noble Part</label>
+    <description>A noble part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+
+<!-- Misc parts -->
+
+<ThingDef ParentName="AugmentPartBase">
+    <defName>WoolyPart</defName>
+    <label>Wooly Part</label>
+    <description>A wooly part acquired from disassembling something.</description>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <graphicData>
+      <texPath>Things/Items/Test/FinishedExp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+  </ThingDef>
+</Defs>

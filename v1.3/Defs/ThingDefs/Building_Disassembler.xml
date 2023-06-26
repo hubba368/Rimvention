@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="BenchBase">
+    <defName>Disassembler</defName>
+    <label>disassembler</label>
+    <description>Dismantles objects into rudimentary parts.</description>
+    <thingClass>Rimvention.Building_Disassembler</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/TableSculpting</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(2.8, 0.3, 0.54)</volume>
+        <offset>(0, 0, -0.18)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>0.8</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.7</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(3,1)</size>
+    <selectable>true</selectable>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <costList>
+      <WoodLog>120</WoodLog>
+      <Steel>30</Steel>
+    </costList>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructEffect>ConstructWood</constructEffect>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <inspectorTabs>
+      <li>Rimvention.ITab_Disassembler</li>
+    </inspectorTabs>
+    <recipes>
+      <li>DismantleObject</li>
+    </recipes>
+  </ThingDef>
+
+</Defs>

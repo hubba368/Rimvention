@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+<RecipeDef>
+    <defName>DismantleObject</defName>
+    <label>dismantle object into parts</label>
+    <description>Break apart an item into smaller parts, which can be used to craft gizmos.</description>
+    <jobString>dismantling object.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+<!-- Apparel Based -->
+      <li>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+	    <li>Manufactured</li>
+	    <li>Foods</li>
+	    <li>ResourcesRaw</li>
+	    <li>Weapons</li>
+	    <li>Items</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <!-- Switched to standard products so we can do "do until you have X"
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>-->
+    <products>
+      <PartsBag>1</PartsBag>
+    </products>
+    <fixedIngredientFilter>
+          <categories>
+            <li>Apparel</li>
+	    <li>Manufactured</li>
+	    <li>Foods</li>
+	    <li>ResourcesRaw</li>
+	    <li>Weapons</li>
+	    <li>Items</li>
+          </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+</Defs>

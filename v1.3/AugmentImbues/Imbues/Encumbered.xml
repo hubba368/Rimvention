@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Imbue>
+  <ID>1</ID>
+  <!--<DefName>ImbueMovementNegative</DefName>-->
+  <ClassName>CapacityModifierImbueThingComp</ClassName>
+  <HediffDef>ImbueMovementNegative</HediffDef>
+  <Name>Encumbered</Name>
+  <Description>Restricts Movement to 60%</Description>
+</Imbue>

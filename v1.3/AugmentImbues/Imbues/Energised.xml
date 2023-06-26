@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Imbue>
+  <ID>2</ID>
+  <!--<DefName>ImbueMovementPositive</DefName>-->
+  <ClassName>CapacityModifierImbueThingComp</ClassName>
+  <HediffDef>ImbueMovementPositive</HediffDef>
+  <Name>Energised</Name>
+  <Description>Increases Movement to 105%</Description>
+</Imbue>

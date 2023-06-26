@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Source>
+	<common type="array">
+		<item>11</item>
+		<item>12</item>
+	</common>
+	<uncommon type="array">
+		<item>37</item>
+	</uncommon>
+</Source>

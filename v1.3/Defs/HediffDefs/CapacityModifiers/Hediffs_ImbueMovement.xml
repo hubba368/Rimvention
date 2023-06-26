@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef Name="CapacityModifierImbue" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+  </HediffDef>
+
+	<HediffDef ParentName="CapacityModifierImbue">
+		<defName>ImbueMovementNegative</defName>
+		<label>Encumbered</label>
+		<description>An active Imbuement from a worn Augment Belt is affecting their movement.</description>
+		<defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+		<stages>
+      		   <li>
+        	   <capMods>
+			<li>
+            		   <capacity>Moving</capacity>
+            		   <setMax>0.6</setMax>
+			</li>
+        	   </capMods>
+      		   </li>
+    		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="CapacityModifierImbue">
+		<defName>ImbueMovementPositive</defName>
+		<label>Energised</label>
+		<description>An active Imbuement from a worn Augment Belt is affecting their movement.</description>
+		<defaultLabelColor>(0.8, 0.2, 0.2)</defaultLabelColor>
+		<stages>
+      		   <li>
+        	   <capMods>
+			<li>
+            		   <capacity>Moving</capacity>
+            		   <offset>0.05</offset>
+			</li>
+        	   </capMods>
+      		   </li>
+    		</stages>
+	</HediffDef>
+
+</Defs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>AddNewAugmentToBelt</defName>
+    <driverClass>Rimvention.JobDriver_AddNewAugment</driverClass>
+    <reportString>Attempting To Add New Augment To Worn Augment Belt.</reportString>
+  </JobDef>
+
+</Defs>

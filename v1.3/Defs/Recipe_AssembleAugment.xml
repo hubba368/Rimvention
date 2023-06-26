@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+<RecipeDef>
+    <defName>AssembleAugment</defName>
+    <label>Assemble an Anima Augment from parts</label>
+    <description>Assemble a Charged Anima Augment from an assortment of inserted parts and Anima Essence.</description>
+    <jobString>Assembling Augment.</jobString>
+    <workAmount>400</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <!--<li>
+        <filter>
+          <categories>
+            <li>AugmentParts</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>-->
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AnimaAugmentShell</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <!-- Switched to standard products so we can do "do until you have X"
+    <specialProducts>
+      <li>Smelted</li>
+    </specialProducts>-->
+    <products>
+      <ChargedAnimaAugment>1</ChargedAnimaAugment>
+    </products>
+  </RecipeDef>
+</Defs>

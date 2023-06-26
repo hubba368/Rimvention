@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+        <ThingCategoryDef>
+    	  <defName>AugmentParts</defName>
+    	  <label>augment parts</label>
+    	  <parent>Root</parent>
+    	  <resourceReadoutRoot>true</resourceReadoutRoot>
+    	  <iconPath>UI/Icons/testicon</iconPath>
+  	</ThingCategoryDef>
+</Defs>

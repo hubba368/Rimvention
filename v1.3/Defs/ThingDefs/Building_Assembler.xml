@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef ParentName="BenchBase">
+    <defName>Assembler</defName>
+    <label>assembler</label>
+    <description>A workstation that allows you to assemble Anima infused Augments, made from an assortment of raw Parts and Anima Essence. You can also make Augment Belts to hold those Augments.</description>
+    <thingClass>Rimvention.Building_Assembler</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Production/TableSculpting</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(2.8, 0.3, 0.54)</volume>
+        <offset>(0, 0, -0.18)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>0.8</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.7</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(3,1)</size>
+    <selectable>true</selectable>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <costList>
+      <WoodLog>50</WoodLog>
+      <Steel>30</Steel>
+    </costList>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructEffect>ConstructWood</constructEffect>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <inspectorTabs>
+      <li>Rimvention.ITab_Assembler</li>
+    </inspectorTabs>
+    <recipes>
+      <li>AssembleAugment</li>
+      <li>MakeAugmentBelt</li>
+      <li>MakeAugmentShell</li>
+    </recipes>
+  </ThingDef>
+
+</Defs>

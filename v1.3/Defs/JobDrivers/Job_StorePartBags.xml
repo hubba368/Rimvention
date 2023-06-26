@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>AssemblerStorePartsBag</defName>
+    <driverClass>Rimvention.JobDriver_StorePartBags</driverClass>
+    <reportString>Attempting To Store Parts Bag In Assembler.</reportString>
+  </JobDef>
+
+</Defs>
